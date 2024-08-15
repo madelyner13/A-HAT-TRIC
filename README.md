@@ -2,6 +2,8 @@
 Autonomous Hybrid Aerial-Terrestrial Transport and Retrieval for In-situ Collection
 
 ## Pre-Requisites
+- Ubuntu 22.04
+- ROS2 Humble distro
 
 ## Instructions for Launching Simulation
 
