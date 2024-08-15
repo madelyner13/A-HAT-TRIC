@@ -1,5 +1,7 @@
 # A-HAT-TRIC
 Autonomous Hybrid Aerial-Terrestrial Transport and Retrieval for In-situ Collection
+### Collaborators
+Madelyne Rossmann, Mahima Thirukkonda, Sabrina Zaleski
 
 ## Pre-Requisites
 - Ubuntu 22.04
