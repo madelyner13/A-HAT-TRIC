@@ -45,8 +45,9 @@ Autonomous Hybrid Aerial-Terrestrial Transport and Retrieval for In-situ Collect
    colcon build
 ```
 NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script that runs at each instance of a new terminal being opened.
+
 10. At the level of the `PX4-Autopilot` and `ros2_gzbridge` folders, create a 'models' directory.
 ```
    mkdir models
 ```
-11. Copy the script 'set_GZ_SIM_RESOURCE_PATH.sh' from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure to update the path to the `models` folder to agree with your machine. The `pwd` command will be helpful for this.
+11. Copy the script `set_GZ_SIM_RESOURCE_PATH.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure to update the path to the `models` folder to agree with your machine. The `pwd` command will be helpful for this.
