@@ -54,3 +54,7 @@ NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script t
 12. Copy the file `baylands.sdf` from this repository (in the `helper_scripts` directory) to `PX4-Autopilot/Tools/simulation/gz/worlds/`.
 13. Copy the script `run_baylands_total.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure the file path in line 6 agrees with your local machine. Again, `pwd` will be helpful here.
 14. In the `PX4-Autopilot` folder, run the below command. Upon startup, you should see the drone in a park-like setting. At this point, QGroundControl can be used to manually fly the drone (be sure Virtual Joystick is enabled in Application Settings).
+```
+   ./run_baylands_total.sh
+```
+15. Another toolkit must be installed to allow the simulation to access Mavlink ROS2 messages. Install this toolkit in the root directory, where `PX4-Autopilot` and `ros2_gzbridge` are located, following the [instructions]{https://docs.px4.io/main/en/middleware/uxrce_dds.html} provided by PX4.
