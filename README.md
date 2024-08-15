@@ -53,8 +53,9 @@ NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script t
 11. Copy the script `set_GZ_SIM_RESOURCE_PATH.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure to update the path to the `models` folder on your machine. The `pwd` command will be helpful for this.
 12. Copy the file `baylands.sdf` from this repository (in the `helper_scripts` directory) to `PX4-Autopilot/Tools/simulation/gz/worlds/`.
 13. Copy the script `run_baylands_total.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure the file path in line 6 agrees with your local machine. Again, `pwd` will be helpful here.
-14. In the `PX4-Autopilot` folder, run the below command. Upon startup, you should see the drone in a park-like setting. At this point, QGroundControl can be used to manually fly the drone (be sure Virtual Joystick is enabled in Application Settings).
+14. In the `PX4-Autopilot` folder, run the below commands. Upon startup, you should see the drone in a park-like setting. At this point, QGroundControl can be used to manually fly the drone (be sure Virtual Joystick is enabled in Application Settings).
 ```
+   ./set_GZ_SIM_RESOURCE_PATH.sh
    ./run_baylands_total.sh
 ```
 15. Another toolkit must be installed to allow the simulation to access Mavlink ROS2 messages. Install this toolkit in the root directory, where `PX4-Autopilot` and `ros2_gzbridge` are located, following the [instructions](https://docs.px4.io/main/en/middleware/uxrce_dds.html) provided by PX4.
@@ -66,3 +67,12 @@ To test the setup, you will need three terminals (all with ROS2 properly sourced
    ./set_GZ_SIM_RESOURCE_PATH.sh
    ./run_baylands_total.sh
 ```
+At this point, the Gazebo window should appear with the drone in the same park-like setting as before.
+
+In the second terminal, navigate to your `PX4-Autopilot` folder and run the following command to activate the MicroXRCE agent:
+```
+   ./start_uXRCE.sh
+```
+You should see it begin to activate and different topics appear.
+
+In the third terminal, run `ros2 topic list` and verify that the Mavlink topics appear.
