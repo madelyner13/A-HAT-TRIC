@@ -57,4 +57,4 @@ NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script t
 ```
    ./run_baylands_total.sh
 ```
-15. Another toolkit must be installed to allow the simulation to access Mavlink ROS2 messages. Install this toolkit in the root directory, where `PX4-Autopilot` and `ros2_gzbridge` are located, following the [instructions]{https://docs.px4.io/main/en/middleware/uxrce_dds.html} provided by PX4.
+15. Another toolkit must be installed to allow the simulation to access Mavlink ROS2 messages. Install this toolkit in the root directory, where `PX4-Autopilot` and `ros2_gzbridge` are located, following the [instructions](https://docs.px4.io/main/en/middleware/uxrce_dds.html) provided by PX4.
