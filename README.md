@@ -66,7 +66,7 @@ NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script t
    ./run_baylands_total.sh
 ```
 15. Another toolkit must be installed to allow the simulation to access Mavlink ROS2 messages. Install this toolkit in the root directory, where `PX4-Autopilot` and `ros2_gzbridge` are located, following the [instructions](https://docs.px4.io/main/en/middleware/uxrce_dds.html) provided by PX4.
-16. Copy the script `start_uXRCE.sh`' from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Running this script will activate the agent and provide access to the Mavlink ROS2 messages.
+16. Copy the script `start_uXRCE.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Running this script will activate the agent and provide access to the Mavlink ROS2 messages.
 17. Copy the `gz_camera.yaml` file from this repository (in the `helper_scripts` directory) to your root directory.
 18. In the root directory, a ROS2 workspace must be created.
 ```
