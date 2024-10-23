@@ -1,0 +1,6 @@
+- write instructions for setting up actual voxl2 environment
+- investigate launch file for launching apriltag_localize_ws and voxl_mpa_to_ros2 together
+- integrate sabrina urdf to drone urdf in gazebo
+- figure out wireless streaming of data from voxl2 to host laptop
+- calibrate camera 
+- verify yaw on bootup is CONSISTENT
