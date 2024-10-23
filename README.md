@@ -7,7 +7,7 @@ Inspired by the canceled NASA JPL
 
 ## Pre-Requisites
 - Ubuntu 22.04
-- QGroundControl
+- [QGroundControl](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html)
 
 ## Instructions for Launching Simulation
 
