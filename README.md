@@ -34,7 +34,9 @@ Inspired by the canceled NASA JPL
    sudo ./install_ros2h_notsource_root.sh
 ```
 Source your ROS2 Humble installation, `source /opt/ros/humble/setup.bash`. 
+
 NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script that runs at each instance of a new terminal being opened.
+
 6. At the same level as the `PX4-Autopilot` folder, create a folder that will allow ROS2 to use Gazebo Garden.
 ```
    mkdir -p ros2_gzbridge/src
