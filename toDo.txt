@@ -4,3 +4,5 @@
 - figure out wireless streaming of data from voxl2 to host laptop
 - calibrate camera 
 - verify yaw on bootup is CONSISTENT
+- update bash file to source apriltag ws
+- recompile ros2_ws for px4_ros_com fix
