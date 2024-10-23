@@ -28,19 +28,21 @@ Inspired by the canceled NASA JPL
 ```
    make px4_sitl gz_x500_depth
 ```
-5. At the same level as the `PX4-Autopilot` folder, create a folder that will allow ROS2 to use Gazebo Garden.
-```
-   mkdir -p ros2_gzbridge/src
-```
-6. Now clone the repository containing the tools necessary for this interface.
-```
-   cd ros2_gzbridge/src
-   git clone https://github.com/gazebosim/ros_gz.git -b humble
-```
-7. Download ROS2 Humble and install necessary prerequisities. Use the script `install_ros2h_notsource_root.sh` in the `helper_scripts` directory to do so.
+5. Download ROS2 Humble and install necessary prerequisities. Use the script `install_ros2h_notsource_root.sh` in the `helper_scripts` directory to do so.
 ```
    sudo chmod +x install_ros2h_notsource_root.sh
    sudo ./install_ros2h_notsource_root.sh
+```
+Source your ROS2 Humble installation, `source /opt/ros/humble/setup.bash`. 
+NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script that runs at each instance of a new terminal being opened.
+6. At the same level as the `PX4-Autopilot` folder, create a folder that will allow ROS2 to use Gazebo Garden.
+```
+   mkdir -p ros2_gzbridge/src
+```
+7. Now clone the repository containing the tools necessary for this interface.
+```
+   cd ros2_gzbridge/src
+   git clone https://github.com/gazebosim/ros_gz.git -b humble
 ```
 8. Assign the proper Gazebo version.
 ```
@@ -51,12 +53,10 @@ Inspired by the canceled NASA JPL
  cd ..
  rosdep install -r --from-paths src -i -y --rosdistro humble
 ```
-10. Source your ROS2 Humble installation, `source /opt/ros/humble/setup.bash`, and build the workspace.
+10. Build the workspace.
 ```
    colcon build
 ```
-NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script that runs at each instance of a new terminal being opened.
-
 11. At the level of the `PX4-Autopilot` and `ros2_gzbridge` folders, create a 'models' directory.
 ```
    mkdir models
