@@ -2,6 +2,8 @@
 Autonomous Hybrid Aerial-Terrestrial Transport and Retrieval for In-situ Collection
 ### Collaborators
 Madelyne Rossmann, Mahima Thirukkonda, Sabrina Zaleski
+### Acknowledgements
+Dr. Derek Paley, Dr. Joe Conroy
 ### Project Overview
 Inspired by the canceled NASA JPL 
 
