@@ -81,7 +81,7 @@ NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script t
 20. Finally, install the necessary PX4 packages.
 ```
    cd <pick ws name>/src
-   git clone https://github.com/PX4/px4_ros_com.git -b release/1.14 --recursive
+   git clone https://github.com/PX4/px4_ros_com.git -b release/v1.14 --recursive
    git clone https://github.com/PX4/px4_msgs.git -b release/1.14 --recursive
    cd ..
    colcon build
