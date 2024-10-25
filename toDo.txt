@@ -9,6 +9,8 @@ GENERAL TO DO LIST:
 - play this rosbag back for the simulated drone and see what happens?
 - or just make a 3d plot of the trajectory in matlab tbh, probably easier
 - make sure the location of the apriltag in inertial coordinates is known, and so is the drone at the instance of offboard mode being engaged
+- /tagpose_body does NOT natively report the frame_id as tagID - see if i can modify joe's code to fill this field
+- figure out printing, since it's mad that %s is a char and not a str?
 
 THINGS FOR DOCUMENTATION:
 - write instructions for setting up actual voxl2 environment
