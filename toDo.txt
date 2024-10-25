@@ -1,10 +1,7 @@
 - write instructions for setting up actual voxl2 environment
 - investigate launch file for launching apriltag_localize_ws and voxl_mpa_to_ros2 together
 - integrate sabrina urdf to drone urdf in gazebo
-- figure out wireless streaming of data from voxl2 to host laptop
-- calibrate camera 
 - verify yaw on bootup is CONSISTENT
-- update bash file to source apriltag ws (on drone)
-- recompile ros2_ws for px4_ros_com fix (on drone)
 - experiment with microros setup (it's all installed on host!!!)
 	- link: https://www.hackster.io/514301/micro-ros-on-esp32-using-arduino-ide-1360ca
+- switch subscriber for tag position from /tag_detections/tagpose to /tag_detections/tagpose_body
