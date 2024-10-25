@@ -4,6 +4,11 @@ GENERAL TO DO LIST:
 - experiment with microros setup (it's all installed on host!!!)
 	- link: https://www.hackster.io/514301/micro-ros-on-esp32-using-arduino-ide-1360ca
 - switch subscriber for tag position from /tag_detections/tagpose to /tag_detections/tagpose_body
+- write a simple node that takes in tag position and calculates how to move to get to it
+- record these trajectory setpoints to a rosbag
+- play this rosbag back for the simulated drone and see what happens?
+- or just make a 3d plot of the trajectory in matlab tbh, probably easier
+- make sure the location of the apriltag in inertial coordinates is known, and so is the drone at the instance of offboard mode being engaged
 
 THINGS FOR DOCUMENTATION:
 - write instructions for setting up actual voxl2 environment
