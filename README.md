@@ -16,6 +16,7 @@ Inspired by the canceled NASA JPL
 ## Instructions for Deploying on Actual Vehicle
 
 ## Setting up Simulation Environment
+Computer simulation is primarily leveraged in this project for testing code that does not require camera information. Camera information is difficult to accurately replicate in simulation, so the general command algorithm is tested in simulation before vision information is integrated for deployment on the actual vehicle. At this stage of the development, only the aerial configuration is set up to be tested in simulation.
 1. Navigate to the directory you'd like to work in.
 2. Clone the `PX4-Autopilot` repository to your local machine.
 ```
@@ -68,7 +69,7 @@ NOTE: It is recommended to add the ROS2 source command to the `.bashrc` script t
 12. Copy the script `set_GZ_SIM_RESOURCE_PATH.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure to update the path to the `models` folder on your machine. The `pwd` command will be helpful for this.
 13. Copy the file `baylands.sdf` from this repository (in the `helper_scripts` directory) to `PX4-Autopilot/Tools/simulation/gz/worlds/`.
 14. Copy the script `run_baylands_total.sh` from this repository (in the `helper_scripts` directory) to your `PX4-Autopilot` folder. Be sure the file path in line 6 agrees with your local machine. Again, `pwd` will be helpful here.
-15. In the `PX4-Autopilot` folder, run the below commands. Upon startup, you should see the drone in a park-like setting. At this point, QGroundControl can be used to manually fly the drone (be sure Virtual Joystick is enabled in Application Settings).
+15. In the `PX4-Autopilot` folder, run the below commands. Upon startup, you should see the vehicle in a park-like setting. At this point, QGroundControl can be used to manually fly the vehicle (be sure Virtual Joystick is enabled in Application Settings).
 ```
    ./set_GZ_SIM_RESOURCE_PATH.sh
    ./run_baylands_total.sh
@@ -96,7 +97,7 @@ To test the setup, you will need three terminals (all with ROS2 properly sourced
    ./set_GZ_SIM_RESOURCE_PATH.sh
    ./run_baylands_total.sh
 ```
-At this point, the Gazebo window should appear with the drone in the same park-like setting as before.
+At this point, the Gazebo window should appear with the vehicle in the same park-like setting as before.
 
 In the second terminal, navigate to your `PX4-Autopilot` folder and run the following command to activate the MicroXRCE agent:
 ```
