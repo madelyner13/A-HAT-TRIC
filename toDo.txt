@@ -3,7 +3,9 @@ GENERAL TO DO LIST:
 - experiment with microros setup (it's all installed on host!!!)
 	- link: https://www.hackster.io/514301/micro-ros-on-esp32-using-arduino-ide-1360ca
 - write a simple node that takes in tag position and calculates how to move to get to it
-- can test it with a stationary tag in sim, probably?
+- use /tag_detections/tagpose_body to determine if a tag has first been found
+	- /tag_detections/tagpose_inertial always spits out non-zero values
+- test compass that Ivan dropped off and connect transmitter
 
 THINGS FOR DOCUMENTATION:
 - write instructions for setting up actual voxl2 environment
