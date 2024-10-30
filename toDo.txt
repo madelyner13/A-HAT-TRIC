@@ -5,6 +5,8 @@ GENERAL TO DO LIST:
 - write a simple node that takes in tag position and calculates how to move to get to it
 - use /tag_detections/tagpose_body to determine if a tag has first been found
 	- /tag_detections/tagpose_inertial always spits out non-zero values
+	- this is done, but it needs to be tested
+	- drone commands also need to be tested
 - test compass that Ivan dropped off and connect transmitter
 	- calibrate and test flight
 
