@@ -7,6 +7,11 @@ GENERAL TO DO LIST:
 	- /tag_detections/tagpose_inertial always spits out non-zero values
 	- this is done, but it needs to be tested
 	- drone commands also need to be tested
+	- collect a rosbag of:
+		- /fmu/out/vehicle_local_position
+		- /tag_detections/body_inertial
+		- /fmu/in/trajectory_setpoint
+	- set matlab up to open that rosbag (tag_detections is geometry_msgs, so should be fine)
 - test compass that Ivan dropped off and connect transmitter
 	- calibrate and test flight
 
