@@ -6,6 +6,7 @@ GENERAL TO DO LIST:
 - use /tag_detections/tagpose_body to determine if a tag has first been found
 	- /tag_detections/tagpose_inertial always spits out non-zero values
 - test compass that Ivan dropped off and connect transmitter
+	- calibrate and test flight
 
 THINGS FOR DOCUMENTATION:
 - write instructions for setting up actual voxl2 environment
