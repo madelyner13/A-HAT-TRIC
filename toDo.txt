@@ -14,6 +14,7 @@ GENERAL TO DO LIST:
 	- set matlab up to open that rosbag (tag_detections is geometry_msgs, so should be fine)
 - test compass that Ivan dropped off and connect transmitter
 	- calibrate and test flight
+- state machine reference, maybe useful??? https://github.com/robosoft-ai/SMACC2
 
 THINGS FOR DOCUMENTATION:
 - write instructions for setting up actual voxl2 environment
