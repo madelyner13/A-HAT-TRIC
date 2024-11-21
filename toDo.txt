@@ -21,3 +21,43 @@ THINGS FOR DOCUMENTATION:
 - need to add geometry_msgs to dependencies for offboard_control executable in CMakeLists.txt for px4_ros_com
 - voxl-tag-detector.deb from joe 
 - calibrate camera, update tag id/size in /etc/modalai/tag_locations.conf
+
+THOUGHTS FOR PARTITIONING CODE:
+- one main node and the different 'states' are different functions that are called
+	- to include functions in the node file, just include them in the header
+	- SOURCE: https://answers.ros.org/question/361699/how-to-use-external-c-function-in-node-main-function/ 
+- files to write:
+	- arming and vertical takeoff
+		arm_vertical_takeoff()
+	- vertical landing and disarming
+		disarm_vertical_landing()
+	- precision landing and disarming
+		disarm_precision_landing()
+	- navigate to search area
+		go_to_search_area()
+	- navigate to home location
+		go_to_home()
+	- search pattern and tag detection
+		search_for_tag()
+	- sample retrieval (driving motors and engaging gripper)
+		retrieve_sample()
+	- sample deposit (disengaging gripper)
+		deposit_sample()
+- idea: create a publisher that publishes a number for what "state" i'm in!
+	vehicle_state.msg
+	- let's number them:
+		(0) arming and vertical takeoff
+		(1) navigate to search area
+		(2) search pattern and tag detection
+		(3) precision landing and disarming
+		(4) sample retrieval
+		(5) navigate to home location
+		(6) vertical landing and disarming
+		(7) sample deposit
+	- nominal order:
+		(0) -> (1) -> (2) -> (3) -> (4) -> (0) -> (5) -> (6) -> (7)
+- each individual file is responsible for performing its own task and then reporting back to the main node when it's done
+
+ESC PROBLEM THOUGHTS:
+- sanity check 'voxl-esc-tools' on a different, working voxl2
+- mess around with firmware on board in voxl2 environment
