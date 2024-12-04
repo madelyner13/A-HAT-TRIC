@@ -57,7 +57,9 @@ THOUGHTS FOR PARTITIONING CODE:
 	- nominal order:
 		(0) -> (1) -> (2) -> (3) -> (4) -> (0) -> (5) -> (6) -> (7)
 - each individual file is responsible for performing its own task and then reporting back to the main node when it's done
+- source from Zach about making a state machine in code: https://refactoring.guru/design-patterns/state
 
 ESC PROBLEM THOUGHTS:
 - sanity check 'voxl-esc-tools' on a different, working voxl2
 - mess around with firmware on board in voxl2 environment
+- source???: https://forum.modalai.com/topic/3357/voxl-io-on-voxl2-j19-port/5
